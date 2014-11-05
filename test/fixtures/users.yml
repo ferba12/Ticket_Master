@@ -1,11 +1,27 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  user_name: MyString
-  password: MyString
-  email: MyString
+  user_name: ferba12
+  password: strlen12
+  email: ferbad12@hotmail.com
 
 two:
-  user_name: MyString
-  password: MyString
-  email: MyString
+  user_name: ajescudero
+  password: 23444e
+  email: ajescudero@gmail.com
+
+three:
+  user_name: pepito122
+  password:  ererererwer
+  email: pepito22@yahoo.com.ar
+
+four:
+  user_name: anasuarez
+  password: 333333
+  email:    anasuarez@hotmail.com
+
+five:
+  user_name: jorgito23
+  password: 3332qwww
+  email: jorgito23@gmail.com
+

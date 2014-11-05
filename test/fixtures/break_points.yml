@@ -1,0 +1,72 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  city: Mendoza
+  province_id: 12 
+
+
+two:
+  id: 2
+  city: San Martín
+  province_id: 12
+
+
+three:
+  id: 3
+  city: Las Catitas
+  province_id: 12
+
+
+four:
+  id: 4
+  city: La Paz
+  province_id: 12
+
+five:
+  id: 5
+  city: Arco Desaguadero
+  province_id: 12
+
+five:
+  id: 5
+  city: Alto Pencoso
+  province_id: 18
+
+
+six:
+  id: 6
+  city: San Luis
+  province_id: 18
+
+
+seven:
+  id: 7
+  city: Villa Mercedes
+  province_id: 18
+
+eigth:
+  id: 8
+  city: Córdoba
+  province_id: 5
+
+
+ten:
+  id: 9
+  city: Villa María
+  province_id: 5
+
+  
+
+eleven:
+  id: 10
+  city: Junín
+  province_id: 1
+  
+
+twelve:
+  id: 11
+  city: Capital Federal
+  province_id: 1
+
+  

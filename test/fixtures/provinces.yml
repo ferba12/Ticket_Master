@@ -1,0 +1,70 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+one:
+  id: 1
+  name: Buenos Aires
+two:
+  id: 2
+  name: Catamarca
+three:
+  id: 3
+  name: Chaco
+four:
+  id: 4
+  name: Chubut
+five:
+  id: 5
+  name: Córdoba
+six:
+  id: 6
+  name: Corrientes
+seven:
+  id: 7
+  name: Entre Ríos
+eight:
+  id: 8 
+  name: Formosa
+nine:
+  id: 9
+  name: Jujuy
+ten:
+  id: 10
+  name: La Pampa
+eleven:
+  id: 11
+  name: La Rioja
+twelve:
+  id: 12
+  name: Mendoza
+thirteen:
+  id: 13
+  name: Misiones
+fourteen:
+  id: 14
+  name: Neuquén
+fifteen:
+  id: 15
+  name: Río Negro
+sixteen:
+  id: 16
+  name: Salta
+seventeen:
+  id: 17
+  name: San Juan
+eighteen:
+  id: 18
+  name: San Luis
+nineteen:
+  id: 19
+  name: Santa Cruz
+twenty:
+  id: 20
+  name: Santa Fe    
+twenty-one:
+  id: 21
+  name: Santiago del Estero
+twenty-two:
+  id: 22
+  name: Tierra del Fuego
+twenty-three:
+  id: 23
+  name: Tucumán   
