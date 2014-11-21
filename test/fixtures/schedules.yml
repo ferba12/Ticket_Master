@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  departure_id: 1
+  departure_date: 05/01/2015
+  departure_time: 08:00
+  arrival_id: 11
+  arrival_date: 06/01/2015
+  arrival_time: 01:00
+  bus_company_id: 1

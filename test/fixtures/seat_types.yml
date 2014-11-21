@@ -1,0 +1,18 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: 
+  id: 1
+  seat_type: Butaca Naranja
+two: 
+  id: 2
+  seat_type: Servicio Cama Ejecutiva
+three: 
+  id: 3
+  seat_type: Semi Cama
+four: 
+  id: 4
+  seat_type: Semi Cama Con Servicio 

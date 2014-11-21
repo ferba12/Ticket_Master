@@ -11,13 +11,51 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141105214630) do
+ActiveRecord::Schema.define(:version => 20141110155920) do
 
   create_table "break_points", :force => true do |t|
     t.string   "city"
     t.integer  "province_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "bus_companies", :force => true do |t|
+    t.string   "company_name"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "bus_seat_types", :force => true do |t|
+    t.integer  "bus_company_id"
+    t.integer  "type_seat_id"
+    t.text     "description"
+    t.decimal  "price"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "credit_card_quotas", :force => true do |t|
+    t.integer  "credit_card_id"
+    t.integer  "quotes"
+    t.integer  "interest"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "credit_cards", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "intermediate_break_points", :force => true do |t|
+    t.integer  "schedule_id"
+    t.integer  "break_point_id"
+    t.date     "departure_date"
+    t.time     "departure_time"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "provinces", :force => true do |t|
@@ -28,9 +66,27 @@ ActiveRecord::Schema.define(:version => 20141105214630) do
 
   add_index "provinces", ["name"], :name => "index_provinces_on_name", :unique => true
 
+  create_table "schedules", :force => true do |t|
+    t.integer  "departure_id"
+    t.date     "departure_date"
+    t.time     "departure_time"
+    t.integer  "arrival_id"
+    t.date     "arrival_date"
+    t.time     "arrival_time"
+    t.integer  "bus_company_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "seat_types", :force => true do |t|
+    t.string   "seat_type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "users", :force => true do |t|
-    t.string   "user_name",  :limit => 50, :null => false
-    t.string   "password",   :limit => 50, :null => false
+    t.string   "user_name",  :limit => 30, :null => false
+    t.string   "password",   :limit => 30, :null => false
     t.string   "email",      :limit => 50, :null => false
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  credit_card_id: 1
+  quotes: 1
+  interest: 1
+
+two:
+  credit_card_id: 1
+  quotes: 1
+  interest: 1

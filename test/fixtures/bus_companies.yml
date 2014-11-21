@@ -1,0 +1,80 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  company_name: El Rápido
+
+two:
+  id: 2
+  company_name: Andesmar
+
+three:
+  id: 3
+  company_name: Cavallier
+
+four:
+  id: 4
+  company_name: Central Argentino
+
+five:
+  id: 5
+  company_name: Cata
+
+six:
+  id: 6
+  company_name: Sendas
+
+seven:
+  id: 7
+  company_name: Plusmar
+
+eight:
+  id: 8
+  company_name: Condor Estrella
+
+
+nine:
+  id: 9
+  company_name: Del Sur y Media Agua
+
+ten: 
+  id: 10
+  company_name: El Patagon
+
+
+eleven: 
+  id: 11
+  company_name: Crucero del Sur
+
+twelve:
+  id: 12
+  company_name: Crucero del Norte
+
+thirteen:
+  id: 13
+  company_name: El aguila
+
+
+fourteen:
+  id: 14
+  company_name: Leader
+
+fifteen:
+  id: 15
+  company_name: 20 de Junio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

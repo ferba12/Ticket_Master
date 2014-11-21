@@ -1,27 +1,37 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  id: 1
   user_name: ferba12
-  password: strlen12
+  password: 34444E
   email: ferbad12@hotmail.com
 
 two:
+  id: 2 
   user_name: ajescudero
   password: 23444e
   email: ajescudero@gmail.com
 
 three:
-  user_name: pepito122
-  password:  ererererwer
-  email: pepito22@yahoo.com.ar
-
+  id: 3
+  user_name: dbarrera55552222    
+  password:  themountain122
+  email: danielbarrera55552222@yahoo.com
 four:
+  id: 4
   user_name: anasuarez
-  password: 333333
+  password: bigthehouse
   email:    anasuarez@hotmail.com
 
 five:
+  id: 5
   user_name: jorgito23
-  password: 3332qwww
+  password: plateriverfall
   email: jorgito23@gmail.com
+
+six: 
+  id: 6
+  user_name: otomano3232
+  password: thethingsaretheyare
+  email: otomano_123@yahoo.com
 
