@@ -1,0 +1,29 @@
+<%= form_for(@bus_seat_type) do |f| %>
+  <% if @bus_seat_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bus_seat_type.errors.count, "error") %> prohibited this bus_seat_type from being saved:</h2>
+
+      <ul>
+      <% @bus_seat_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bus_company_id %><br />
+    <%= f.number_field :bus_company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :seat_type_id %><br />
+    <%= f.number_field :seat_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module BusSeatTypesHelper
+end

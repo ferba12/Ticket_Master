@@ -1,0 +1,35 @@
+<h1 id="title">Listing Bus Seat Types</h1>
+
+<table>
+  <tr>
+    <th>Bus company</th>
+    <th>Seat type</th>
+    <th>Description</th>    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bus_seat_types.each do |bus_seat_type| %>
+  <tr>
+    <td><%= bus_seat_type.bus_company.company %></td>
+    <td><%= bus_seat_type.seat_type.kind%></td>
+    <td><%= bus_seat_type.description %></td>
+    <td><%= link_to 'Show', bus_seat_type %></td>
+    <td><%= link_to 'Edit', edit_bus_seat_type_path(bus_seat_type) %></td>
+    <td><%= link_to 'Destroy', bus_seat_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bus seat type', new_bus_seat_type_path %>
+&nbsp;&nbsp;
+<%= link_to 'Index', home_index_path %>
+<div id="references">
+  <h3>References </h3>
+  <% @seat_types.each do |seat_type|  %>
+   <b><%= seat_type.kind %></b>=<%= seat_type.description%><br/>
+  <%  end %>
+</div>

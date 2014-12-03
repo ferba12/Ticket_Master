@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @seat_type.kind %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @seat_type.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_seat_type_path(@seat_type) %> |
+<%= link_to 'Back', seat_types_path %>

@@ -8,11 +8,12 @@
 require 'active_record/fixtures'
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "users")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "provinces")
-=begin
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "break_points")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "bus_companies")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "seat_types")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "credit_cards")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "bus_seat_types")
+=begin
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "schedules")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "intermediate_break_points")
 =end

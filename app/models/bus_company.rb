@@ -1,4 +1,5 @@
 class BusCompany < ActiveRecord::Base
-  attr_accessible :company_name
-  has_many :bus_seat_types
+  attr_accessible :company
+  has_many :bus_set_types 
+  			  
 end

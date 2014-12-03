@@ -2,32 +2,32 @@
 
 one:
   id: 1
-  name: Nevada
+  company: Nevada
 
 two:
   id: 2
-  name: Provencred
+  company: Provencred
 
 three:
   id: 3
-  name: Mastercard
+  company: Mastercard
 
 four:
   id: 5
-  name: Visa
+  company: Visa
 
 five:
   id: 6
-  name: American Express
+  company: American Express
 
 six:
   id: 7
-  name: Nativa
+  company: Nativa
 
 seven:
   id: 8
-  name: Cabal
+  company: Cabal
 
 eight:
   id: 9
-  name: Cencosud
+  company: Cencosud

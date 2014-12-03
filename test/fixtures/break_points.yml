@@ -56,17 +56,14 @@ ten:
   city: Villa María
   province_id: 5
 
-  
 
 eleven:
   id: 10
   city: Junín
   province_id: 1
-  
+
 
 twelve:
   id: 11
   city: Capital Federal
   province_id: 1
-
-  

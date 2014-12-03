@@ -1,18 +1,16 @@
 <h1 id="title">Listing Users</h1>
 <table>
   <tr>
+    <th>Id</th>   
   	<th>UserName</th>
-    <th>&nbsp;&nbsp;&nbsp;</th>
-  	<th>Password</th>
-    <th>&nbsp;&nbsp;&nbsp;</th>
-  	<th>Email</th>  	  	
+    <th>Password</th>
+    <th>Email</th>  	  	
   </tr>
  <% @users.each  do |user| %>
    <tr>
+     <td><%=user.id %></td>
      <td><%= user.user_name %></td>     
-     <td>&nbsp;&nbsp;&nbsp;</td>
      <td><%= user.password %></td>
-     <td>&nbsp;&nbsp;&nbsp;</td>
      <td><%= user.email %></td>
      <td><%= link_to 'Show', user %></td>
      <td><%= link_to 'Edit', edit_user_path(user) %></td>
@@ -21,4 +19,8 @@
   <% end %>
 </table>
 <br />
-<%= link_to 'New User', new_user_path %>
+<div class="links">
+  <%= link_to 'New User', new_user_path %>
+  &nbsp;&nbsp;
+  <%= link_to 'Index', home_index_path %>
+</div>

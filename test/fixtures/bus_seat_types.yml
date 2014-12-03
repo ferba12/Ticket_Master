@@ -1,0 +1,31 @@
+one:
+  id: 1
+  bus_company_id: 2
+  seat_type_id:   1
+  description:    Butacas 120º de inclinación,
+                  calefacción y aire acondicionado, música funcional y video.
+
+two:
+  id: 2
+  bus_company_id: 2
+  seat_type_id:   2
+  description:    Butacas de cuero y paño 120º de reclinación,
+                  bandeja de apoyo para pies, calefacción y aire acondicionado,
+                  música funcional y video.
+
+three:
+  id: 3  
+  bus_company_id: 2
+  seat_type_id:   4
+  description:    Butacas extra ancho de cuero y paño 150º de reclinación,
+                  bandeja de apoyo para pies,desayuno, almohada y frazada,
+                  sistema de DVD y MP3.
+
+four:
+  id: 4 
+  bus_company_id: 2
+  seat_type_id:   5
+  description:    Butacas de cuero 180º reclinación, bandeja de apoyo para
+                  pies de 180º de reclinación, cortina divisoria, almohada y
+                  frazadas sonido sourround, sistema de DVD y MP3, aire y calefacción, 
+                  menú a elección de carne, pollo o verdura  para su cena.

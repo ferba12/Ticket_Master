@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>City:</b>
+  <%= @break_point.city %>
+</p>
+
+<p>
+  <b>Province:</b>
+  <%= @break_point.province_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_break_point_path(@break_point) %> |
+<%= link_to 'Back', break_points_path %>

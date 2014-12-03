@@ -1,0 +1,28 @@
+<h1 id="title">Bus Companies</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Company</th>    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bus_companies.each do |bus_company| %>
+  <tr>
+    <td><%= bus_company.id %></td>
+    <td><%= bus_company.company %></td>
+    <td><%= link_to 'Show', bus_company %></td>
+    <td><%= link_to 'Edit', edit_bus_company_path(bus_company) %></td>
+    <td><%= link_to 'Destroy', bus_company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+ <%= link_to 'New Bus company', new_bus_company_path %>
+ &nbsp;&nbsp;
+ <%= link_to 'Index', home_index_path %>
+

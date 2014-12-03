@@ -1,3 +1,4 @@
 class SeatType < ActiveRecord::Base
-  has_many :bus_seat_types
+  attr_accessible :description, :type
+  has_many :bus_set_types 
 end

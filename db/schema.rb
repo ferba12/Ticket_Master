@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141110155920) do
+ActiveRecord::Schema.define(:version => 20141203011151) do
 
   create_table "break_points", :force => true do |t|
     t.string   "city"
@@ -21,16 +21,15 @@ ActiveRecord::Schema.define(:version => 20141110155920) do
   end
 
   create_table "bus_companies", :force => true do |t|
-    t.string   "company_name"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.string   "company"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "bus_seat_types", :force => true do |t|
     t.integer  "bus_company_id"
-    t.integer  "type_seat_id"
+    t.integer  "seat_type_id"
     t.text     "description"
-    t.decimal  "price"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -44,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20141110155920) do
   end
 
   create_table "credit_cards", :force => true do |t|
-    t.string   "name"
+    t.string   "company"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -59,12 +58,10 @@ ActiveRecord::Schema.define(:version => 20141110155920) do
   end
 
   create_table "provinces", :force => true do |t|
-    t.string   "name",       :limit => 50, :null => false
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
-
-  add_index "provinces", ["name"], :name => "index_provinces_on_name", :unique => true
 
   create_table "schedules", :force => true do |t|
     t.integer  "departure_id"
@@ -79,9 +76,10 @@ ActiveRecord::Schema.define(:version => 20141110155920) do
   end
 
   create_table "seat_types", :force => true do |t|
-    t.string   "seat_type"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "kind"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "users", :force => true do |t|
