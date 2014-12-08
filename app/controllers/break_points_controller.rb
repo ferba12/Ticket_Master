@@ -3,7 +3,6 @@ class BreakPointsController < ApplicationController
   # GET /break_points.json
   def index
     @break_points = BreakPoint.all
-    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @break_points }
@@ -25,7 +24,7 @@ class BreakPointsController < ApplicationController
   # GET /break_points/new.json
   def new
     @break_point = BreakPoint.new
-
+    @provinces=Province.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @break_point }
@@ -35,13 +34,14 @@ class BreakPointsController < ApplicationController
   # GET /break_points/1/edit
   def edit
     @break_point = BreakPoint.find(params[:id])
+    @provinces=Province.all
   end
 
   # POST /break_points
   # POST /break_points.json
   def create
     @break_point = BreakPoint.new(params[:break_point])
-
+    @provinces=Province.all
     respond_to do |format|
       if @break_point.save
         format.html { redirect_to @break_point, notice: 'Break point was successfully created.' }
@@ -56,8 +56,8 @@ class BreakPointsController < ApplicationController
   # PUT /break_points/1
   # PUT /break_points/1.json
   def update
-    @break_point = BreakPoint.find(params[:id])
-
+      
+      @break_point = BreakPoint.find(params[:id])      
     respond_to do |format|
       if @break_point.update_attributes(params[:break_point])
         format.html { redirect_to @break_point, notice: 'Break point was successfully updated.' }

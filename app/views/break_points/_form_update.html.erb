@@ -17,9 +17,9 @@
   </div>
   <div class="field">
     <%= f.label :province_id %><br />
-    <%= f.number_field :province_id %>
+    <%= f.select :province_id,  @provinces.collect{|p|[p.name,p.id]},selected:@break_point.province.name %>
   </div>
   <div class="actions">
     <%= f.submit %>
-  </div>
+  </div>  
 <% end %>

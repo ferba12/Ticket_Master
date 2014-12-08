@@ -84,7 +84,7 @@ ActiveRecord::Schema.define(:version => 20141203011151) do
 
   create_table "users", :force => true do |t|
     t.string   "user_name",  :limit => 30, :null => false
-    t.string   "password",   :limit => 30, :null => false
+    t.string   "password",   :limit => 60, :null => false
     t.string   "email",      :limit => 50, :null => false
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
