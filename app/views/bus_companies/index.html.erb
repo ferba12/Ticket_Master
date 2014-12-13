@@ -1,17 +1,20 @@
 <h1 id="title">Bus Companies</h1>
 
-<table>
+<table id="bus_company">
   <tr>
     <th>Id</th>
+    <th>Logo</th>
     <th>Company</th>    
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
+
 <% @bus_companies.each do |bus_company| %>
   <tr>
     <td><%= bus_company.id %></td>
+    <td class="logo"><%= image_tag( bus_company.logo )%> </td>
     <td><%= bus_company.company %></td>
     <td><%= link_to 'Show', bus_company %></td>
     <td><%= link_to 'Edit', edit_bus_company_path(bus_company) %></td>

@@ -3,66 +3,76 @@
 one:
   id: 1
   company: El Rápido
+  logo: el_rapido.jpg
 
 two:
   id: 2
   company: Andesmar
+  logo: andesmar.jpg
 
 three:
   id: 3
-  company: Cavallier
+  company: Plusmar
+  logo: plusmar.jpg
 
 four:
   id: 4
   company: Central Argentino
+  logo: central_argentino.jpg
 
 five:
   id: 5
   company: Cata
+  logo: cata.jpg
 
 six:
   id: 6
   company: Sendas
+  logo: sendas.jpg
 
 seven:
   id: 7
-  company: Plusmar
+  company: Tramat
+  logo: tramat.jpg
 
 eight:
   id: 8
   company: Condor Estrella
-
+  logo: condor_estrella.jpg
 
 nine:
   id: 9
   company: Del Sur y Media Agua
-
+  logo: del_sur_y_media_agua.jpg
 ten: 
   id: 10
   company: El Patagon
+  logo: el_patagon.jpg
 
 
 eleven: 
   id: 11
   company: Crucero del Sur
+  logo: crucero_del_sur.jpg
 
 twelve:
   id: 12
   company: Crucero del Norte
-
+  logo: crucero_del_norte.jpg
+  
 thirteen:
   id: 13
   company: El aguila
-
-
+  logo: el_aguila.jpg
 fourteen:
   id: 14
   company: Leader
-
+  logo: leader.jpg
 fifteen:
   id: 15
   company: 20 de Junio
-
+  logo: 20_de_junio.jpg
+  
 
 
 

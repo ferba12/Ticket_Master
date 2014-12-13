@@ -35,6 +35,7 @@ class BreakPointsController < ApplicationController
   def edit
     @break_point = BreakPoint.find(params[:id])
     @provinces=Province.all
+    #render text: @break_point.province.name
   end
 
   # POST /break_points

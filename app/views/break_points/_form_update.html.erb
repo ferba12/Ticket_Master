@@ -10,14 +10,15 @@
       </ul>
     </div>
   <% end %>
-
+  
   <div class="field">
     <%= f.label :city %><br />
     <%= f.text_field :city %>
   </div>
+  <%= @break_point.province.name   %>
   <div class="field">
     <%= f.label :province_id %><br />
-    <%= f.select :province_id,  @provinces.collect{|p|[p.name,p.id]},selected:@break_point.province.name %>
+    <%= f.select :province_id,  @provinces.collect{|p|[p.name,p.id]},selected: @break_point.province.id %>
   </div>
   <div class="actions">
     <%= f.submit %>

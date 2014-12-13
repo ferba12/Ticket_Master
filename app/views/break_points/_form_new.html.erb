@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :province_id %><br />
-    <%= f.select :province_id,Province.all.collect {|p| [p.name,p.id] }%>
+    <%= f.select :province_id,@provinces.collect {|p| [p.name,p.id] }%>
   </div>
   <div class="actions">
     <%= f.submit %>
