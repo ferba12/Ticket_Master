@@ -1,7 +1,8 @@
 <h1 id="title">Listing Credit Cards</h1>
 
-<table>
+<table id="credit_cards">
   <tr>
+    <th>Logo</th>
     <th>Company</th>
     <th></th>
     <th></th>
@@ -10,6 +11,7 @@
 
 <% @credit_cards.each do |credit_card| %>
   <tr>
+    <td><%= image_tag(credit_card.logo)  %></td>
     <td><%= credit_card.company %></td>
     <td><%= link_to 'Show', credit_card %></td>
     <td><%= link_to 'Edit', edit_credit_card_path(credit_card) %></td>

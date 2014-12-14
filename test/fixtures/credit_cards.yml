@@ -3,31 +3,38 @@
 one:
   id: 1
   company: Nevada
+  logo: nevada.jpg
 
 two:
   id: 2
   company: Provencred
+  logo: provencred.jpg
 
 three:
   id: 3
   company: Mastercard
+  logo: mastercard.jpg
 
 four:
   id: 5
   company: Visa
-
+  logo: visa.jpg
 five:
   id: 6
   company: American Express
+  logo: american_express.jpg
 
 six:
   id: 7
   company: Nativa
+  logo: nativa.jpg
 
 seven:
   id: 8
   company: Cabal
+  logo: cabal.jpg
 
 eight:
   id: 9
   company: Cencosud
+  logo: cencosud.jpg
