@@ -1,8 +1,8 @@
 class CreateSeatTypes < ActiveRecord::Migration
   def change
     create_table :seat_types do |t|
-      t.string :kind
-      t.string :description
+      t.string :abbreviation 
+      t.string :seat_type
       t.timestamps
     end
   end

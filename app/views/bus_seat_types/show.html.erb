@@ -1,19 +1,20 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Bus company:</b>
-  <%= @bus_seat_type.bus_company_id %>
+  <b>Seat type:</b>
+  <%= @bus_seat_type.seat_type.seat_type %>
 </p>
 
 <p>
-  <b>Seat type:</b>
-  <%= @bus_seat_type.seat_type_id %>
+  <b>Company:</b>
+  <%= @bus_seat_type.bus_company.company %>
 </p>
 
 <p>
   <b>Description:</b>
   <%= @bus_seat_type.description %>
 </p>
+
 
 <%= link_to 'Edit', edit_bus_seat_type_path(@bus_seat_type) %> |
 <%= link_to 'Back', bus_seat_types_path %>

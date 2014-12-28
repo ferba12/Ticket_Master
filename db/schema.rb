@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141203011151) do
+ActiveRecord::Schema.define(:version => 20141223030318) do
 
   create_table "break_points", :force => true do |t|
     t.string   "city"
@@ -27,10 +27,17 @@ ActiveRecord::Schema.define(:version => 20141203011151) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "bus_routes", :force => true do |t|
+    t.integer  "origen_id"
+    t.integer  "destination_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
   create_table "bus_seat_types", :force => true do |t|
-    t.integer  "bus_company_id"
     t.integer  "seat_type_id"
     t.text     "description"
+    t.integer  "bus_company_id"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -50,11 +57,12 @@ ActiveRecord::Schema.define(:version => 20141203011151) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "intermediate_break_points", :force => true do |t|
-    t.integer  "schedule_id"
-    t.integer  "break_point_id"
-    t.date     "departure_date"
-    t.time     "departure_time"
+  create_table "prices", :force => true do |t|
+    t.integer  "origen_id"
+    t.integer  "destination_id"
+    t.integer  "bus_company_id"
+    t.integer  "seat_type_id"
+    t.float    "price"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
   end
@@ -65,23 +73,18 @@ ActiveRecord::Schema.define(:version => 20141203011151) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "schedules", :force => true do |t|
-    t.integer  "departure_id"
-    t.date     "departure_date"
-    t.time     "departure_time"
-    t.integer  "arrival_id"
-    t.date     "arrival_date"
-    t.time     "arrival_time"
-    t.integer  "bus_company_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+  create_table "seat_types", :force => true do |t|
+    t.string   "abbreviation"
+    t.string   "seat_type"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
-  create_table "seat_types", :force => true do |t|
-    t.string   "kind"
-    t.string   "description"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+  create_table "trips", :force => true do |t|
+    t.integer  "origen_id"
+    t.integer  "destination_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   create_table "users", :force => true do |t|

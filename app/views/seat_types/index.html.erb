@@ -1,10 +1,9 @@
-<h1 id="title">Listing Seat Types</h1>
+<h1 id="seat_type_title"> Seat Types</h1>
 
 <table>
   <tr>
-    <th> Id </th>
-    <th>Type</th>
-    <th>Description</th>
+    <th>Abbreviation</th>
+    <th>Seat type</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,9 +11,8 @@
 
 <% @seat_types.each do |seat_type| %>
   <tr>
-    <td><%= seat_type.id %></td>
-    <td><%= seat_type.kind %></td>
-    <td><%= seat_type.description %></td>
+    <td><%= seat_type.abbreviation %></td>
+    <td><%= seat_type.seat_type %></td>
     <td><%= link_to 'Show', seat_type %></td>
     <td><%= link_to 'Edit', edit_seat_type_path(seat_type) %></td>
     <td><%= link_to 'Destroy', seat_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -23,9 +21,8 @@
 </table>
 
 <br />
-<div>
-  <%= link_to 'New Seat type', new_seat_type_path %>
-  &nbsp;&nbsp;
-  <%= link_to 'Index', home_index_path %>
-</div>
+
+<%= link_to 'New Seat type', new_seat_type_path %>
+ &nbsp;&nbsp;
+<%= link_to 'Index', root_path %>
 

@@ -1,24 +1,20 @@
 one:
   id: 1
-  kind: BN
-  description: Butacas Naranjas
+  abbreviation: BN
+  seat_type: Butacas Naranjas
 
 dos:
   id: 2
-  kind: SC
-  description: Semicama
+  abbreviation: SC
+  seat_type: Semicama
 
-tres:
+three:
   id: 3
-  kind: SCS
-  description: Semicama con Servicio
+  abbreviation: SCS
+  seat_type: Semicama con Servicio
 
-cuatro:
+four:
   id: 4
-  kind: SE
-  description: Servicio Ejecutivo
+  abbreviation: SE
+  seat_type: Servicio Ejecutivo
 
-cinco:
-  id: 5
-  kind: SUIT
-  description: Servicio Especial

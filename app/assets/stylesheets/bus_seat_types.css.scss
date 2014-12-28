@@ -1,3 +1,33 @@
 // Place all the styles related to the BusSeatTypes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#bus_set_type_title{
+	text-align: center;
+}
+#bus_seat_type{
+	margin-left: 0px
+}
+#bus_seat_type th.center{
+	text-align: center;
+}
+
+#bus_seat_type th.center{
+	text-align: center;
+}
+#bus_seat_type th{
+	text-align: left;
+	color: white;
+	background-color: green;
+    
+}
+#bus_seat_type td{
+    background-color: gray;
+    color: white;
+
+}
+#bus_seat_type a:link{
+	color: white;
+}
+#bus_seat_type{
+	width: 100%
+}

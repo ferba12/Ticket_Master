@@ -1,4 +1,10 @@
 TicketMaster::Application.routes.draw do
+  resources :bus_routes
+
+
+  resources :seat_types
+
+
   resources :bus_seat_types
 
 

@@ -40,17 +40,8 @@ class ProvincesController < ApplicationController
   # POST /provinces
   # POST /provinces.json
   def create
-    @province = Province.new(params[:province])
-
-    respond_to do |format|
-      if @province.save
-        format.html { redirect_to @province, notice: 'Province was successfully created.' }
-        format.json { render json: @province, status: :created, location: @province }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @province.errors, status: :unprocessable_entity }
-      end
-    end
+    objArray = JSON.parse(params[:datos]);
+    render text: objArray[0];
   end
 
   # PUT /provinces/1

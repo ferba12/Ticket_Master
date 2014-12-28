@@ -1,3 +1,4 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 one:
   id: 1
   bus_company_id: 2
@@ -16,7 +17,7 @@ two:
 three:
   id: 3  
   bus_company_id: 2
-  seat_type_id:   4
+  seat_type_id:   3
   description:    Butacas extra ancho de cuero y paño 150º de reclinación,
                   bandeja de apoyo para pies,desayuno, almohada y frazada,
                   sistema de DVD y MP3.
@@ -24,7 +25,7 @@ three:
 four:
   id: 4 
   bus_company_id: 2
-  seat_type_id:   5
+  seat_type_id:   4
   description:    Butacas de cuero 180º reclinación, bandeja de apoyo para
                   pies de 180º de reclinación, cortina divisoria, almohada y
                   frazadas sonido sourround, sistema de DVD y MP3, aire y calefacción, 

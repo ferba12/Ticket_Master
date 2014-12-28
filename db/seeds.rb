@@ -11,3 +11,7 @@ ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "provinces
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "break_points") 
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "bus_companies")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "credit_cards")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "seat_types")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "bus_seat_types")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "bus_routes")
+

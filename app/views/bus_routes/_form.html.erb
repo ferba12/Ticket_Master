@@ -1,0 +1,25 @@
+<%= form_for(@bus_route) do |f| %>
+  <% if @bus_route.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bus_route.errors.count, "error") %> prohibited this bus_route from being saved:</h2>
+
+      <ul>
+      <% @bus_route.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :origen_id,"Origen" %><br />
+    <%= f.select :origen_id ,@break_points.collect {|p| [ "#{p.city}-#{p.province.name}", p.id ] } %>
+  </div>
+  <div class="field">
+    <%= f.label :destination_id,"Destination" %><br />
+    <%= f.number_field :destination_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

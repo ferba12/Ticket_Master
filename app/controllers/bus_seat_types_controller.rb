@@ -3,7 +3,6 @@ class BusSeatTypesController < ApplicationController
   # GET /bus_seat_types.json
   def index
     @bus_seat_types = BusSeatType.all
-    @seat_types=SeatType.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,6 +25,7 @@ class BusSeatTypesController < ApplicationController
   # GET /bus_seat_types/new.json
   def new
     @bus_seat_type = BusSeatType.new
+    @seat_types=SeatType.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -36,6 +36,7 @@ class BusSeatTypesController < ApplicationController
   # GET /bus_seat_types/1/edit
   def edit
     @bus_seat_type = BusSeatType.find(params[:id])
+    @seat_types=SeatType.all
   end
 
   # POST /bus_seat_types
