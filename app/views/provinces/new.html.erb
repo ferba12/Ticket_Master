@@ -1,53 +1,21 @@
+<%= form_for(@province) do |f| %>
+  <% if @province.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@province.errors.count, "error") %> prohibited this province from being saved:</h2>
 
-<html>
-<head>
-  <title></title>
+      <ul>
+      <% @province.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script>
-   $(document).ready(function(){
-     $provinces=new Array();
-    
-  $(".add").click(function(e) {
-    
-    $("body").append("<label class='label1'>Add Province</label>");
-    $("body").append("<input type='text' class='value'/>")
-    $(".add").prop('disabled', true);
-    $("body").append("<input type='button' id='save' value='Save'>")    
-   });
-   $("body").on("click","#save", function(){
-        $provinces.push($(".value").val());
-        $(".label1").remove();
-        $(".value").remove();
-        $(".add").prop('disabled', false);
-        $(this).remove();        
-     });
-   $("body").on("click",".show", function(){
-      $cadena="";   
-         for($i=0;$i<$provinces.length;$i++){
-            $cadena=$cadena+"\n"+$provinces[$i];
-         }
-         alert($cadena);
-   });
-   $("body").on("click",".send", function(e){
-      e.preventDefault();
-      var myJsonString = JSON.stringify($provinces);
-      $(".a").val(myJsonString);
-      $("#f").submit(); 
-   });
-  });
-
-  </script>
-</head>
-<body>
-  <h1>New province</h1>
-
-  <button class="add">Add Province</button>
-  <button class="show">Show array</button>
-  <form method="post" action="/provinces" id="f" style="display:inline">  
-   <input type="hidden" class="a" name="datos">
-   <input type="submit" class="send"/>
-  </form>
-  <br/><br/>
-</body>
-</html>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
