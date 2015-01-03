@@ -2,10 +2,14 @@
 
 one:
   id: 1
-  departure_id: 1
-  departure_date: 05/01/2015
-  departure_time: 08:00
-  arrival_id: 11
-  arrival_date: 06/01/2015
-  arrival_time: 01:00
+  bus_route_id: 1
   bus_company_id: 1
+  departure_date: 2015-01-01 08:00:00
+  arrival_date: 2015-01-02 02:30:00
+
+two:
+  id: 2
+  bus_route_id: 1
+  bus_company_id: 2
+  departure_date: 2015-01-01 14:30:00  
+  arrival_date: 2015-02-01 09:00:00

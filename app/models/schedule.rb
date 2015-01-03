@@ -1,6 +1,5 @@
 class Schedule < ActiveRecord::Base
-  belongs_to :arrival, class_name: "BreakPoint"
-  belongs_to :departure, class_name: "BreakPoint"
-  
+  attr_accessible :arrival_date, :arrival_date, :bus_company_id, :bus_route_id, :departure_date
+  belongs_to :bus_route
+  belongs_to :bus_company
 end
-  

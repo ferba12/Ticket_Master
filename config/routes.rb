@@ -1,4 +1,7 @@
 TicketMaster::Application.routes.draw do
+  resources :schedules
+
+
   resources :bus_routes
 
 

@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+  id: 1
   origen_id: 1
   destination_id: 11
 
 two:
+  id: 2
   origen_id: 6
   destination_id: 11

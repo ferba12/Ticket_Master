@@ -2,12 +2,12 @@
 
 <p>
   <b>Origen:</b>
-  <%= @bus_route.origen_id %>
+  <%= "#{@bus_route.origen.city}-#{@bus_route.origen.province.name}" %>
 </p>
 
 <p>
   <b>Destination:</b>
-  <%= @bus_route.destination_id %>
+  <%= "#{@bus_route.destination.city}-#{@bus_route.destination.province.name}" %>
 </p>
 
 

@@ -12,4 +12,5 @@ class BusCompany < ActiveRecord::Base
  # Relationships
  has_many :prices, :dependent => :destroy
  has_many :bus_seat_types, :dependent => :destroy
+ has_many :schedules, :dependent=>:destroy
 end

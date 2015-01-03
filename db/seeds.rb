@@ -14,4 +14,5 @@ ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "credit_ca
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "seat_types")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "bus_seat_types")
 ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "bus_routes")
+ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "schedules")
 

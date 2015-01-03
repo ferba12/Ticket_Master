@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Bus route:</b>
+  <%= @schedule.bus_route_id %>
+</p>
+
+<p>
+  <b>Bus company:</b>
+  <%= @schedule.bus_company_id %>
+</p>
+
+<p>
+  <b>Departure date:</b>
+  <%= @schedule.departure_date %>
+</p>
+
+<p>
+  <b>Arrival date:</b>
+  <%= @schedule.arrival_date %>
+</p>
+
+<p>
+  <b>Arrival date:</b>
+  <%= @schedule.arrival_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>
