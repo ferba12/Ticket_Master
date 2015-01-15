@@ -89,13 +89,6 @@ ActiveRecord::Schema.define(:version => 20141231211702) do
     t.datetime "updated_at",   :null => false
   end
 
-  create_table "trips", :force => true do |t|
-    t.integer  "origen_id"
-    t.integer  "destination_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
   create_table "users", :force => true do |t|
     t.string   "user_name",  :limit => 30, :null => false
     t.string   "password",   :limit => 60, :null => false
